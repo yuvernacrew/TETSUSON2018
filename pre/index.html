@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>TETSUSON2018</title>
+  <link rel='stylesheet' type='text/css' href='css/ress.min.css'>
+  <link rel='stylesheet' type='text/css' href='css/jquery.fullPage.css'>
+  <link rel='stylesheet' type='text/css' href='css/slick-theme.css'>
+  <link rel='stylesheet' type='text/css' href='css/slick.css'>
+  <link rel='stylesheet' type='text/css' href='css/style.css'>
+
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+
+
+</head>
+<body>
+  <!-- ▼ main -->
+  <main id="fullpage">
+    <div class="section top">
+      <img class="logo-img" src="images/logo-image.png">
+    </div>
+  	<div class="section about">
+      <div class="wrapper">
+        <h1>About</h1>
+        <div class="l-relative clearfix">
+          <div class="l-left about-container y-center is-pc">
+            <img src="images/about-photo.png">
+          </div>
+          <div class="l-right about-container right">
+            <h2>TETSUSONとは</h2><br>
+            <p>分野・大学・国などのあらゆる枠を超えて集った<br class="is-pc">
+            卒業制作の展示を行う、卒業制作合同展示会です。<br class="is-pc">
+            企画・運営は全て全国から集まった有志の学生が行っています。<br class="is-pc">
+            TETSUSONは2001年に発足し、今年で17年目を迎えます。</p>
+
+            <h2>今年のTETSUSONテーマは「結ぶ」</h2><br>
+            <p>出展者様、お客様、企業の方々、会場を貸していただける方々、<br class="is-pc">
+            我々スタッフ等、 様々な人との出会いやつながりが TETSUSON にはあります。<br class="is-pc">
+            そしてこの結びつきはこれから先も色々な可能性を秘めています。<br class="is-pc">
+            TETSUSON2018 はこの大切なご縁を結ぶ場でありたい。<br class="is-pc">
+            そんな願いを込めたテーマです。</p>
+          </div>
+        </div>
+    </div>
+    </div>
+  	<div class="section photo bg-gray">
+      <h1>Photo</h1>
+        <p>例年のTETSUSONの様子です。<br>
+        写真は随時追加します。</p>
+        <section class="slick slider">
+            <img src='images/past/img1.jpg'>
+            <img src='images/past/img2.jpg'>
+            <img src='images/past/img3.jpg'>
+            <img src='images/past/img4.jpg'>
+            <img src='images/past/img5.jpg'>
+            <img src='images/past/img6.jpg'>
+            <img src='images/past/img7.jpg'>
+            <img src='images/past/img8.jpg'>
+            <img src='images/past/img9.jpg'>
+            <img src='images/past/img10.jpg'>
+      </section>
+
+    </div>
+    <div class="section entry bg-gray">
+      <div class="overlay">
+        <h1>Entry</h1>
+        <div class="btn-container">
+          <div class="btn square_btn"><a href="entry.html">エントリーフォーム</a></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ▲ main -->
+  <script>
+  $(function(){
+    $('#fullpage').fullpage({
+      anchors: ['TOP', 'ABOT', 'PHOTO', 'ENTRY'],
+      navigation: true,
+      navigationPosition: 'right',
+      navigationTooltips: ['TOP', 'ABOT', 'PHOTO', 'ENTRY']
+    });
+  });
+
+  $(function(){
+    $('.slick').slick({
+      centerMode: true,
+      slidesToShow: 1,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      responsive: [
+      {
+        breakpoint: 780,
+        settings: {
+          centerMode: false
+        }
+      }],
+    });
+  });
+  </script>
+</body>
+</html>

@@ -6,3 +6,9 @@ node_modules/
 
 # 素材ディレクトリ
 materials/
+
+#frontplateのgitignore
+.idea
+.sass-cache
+public
+guide

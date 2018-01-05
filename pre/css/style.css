@@ -1,0 +1,357 @@
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Ribbon';
+  src: url(../font/Ribbon131BT-Bold.otf);
+}
+
+@font-face {
+  font-family: 'ryumin';
+  src: url(../font/A-OTF-RyuminPro-Regular.otf);
+}
+
+body {
+  font-family: 'ryumin' , KozGoPro-Light, "小塚ゴシック Pro L", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", 游ゴシック, YuGothic, メイリオ, Meiryo, sans-serif;
+  color: #000;
+  letter-spacing: 2px;
+  line-height: 2.0;
+}
+
+/* document color */
+.text-orange {
+  color: #F39800;
+}
+
+.text-orange2 {
+  color: #EA5514;
+}
+
+.text-gray {
+  color: #A4AAB3;
+}
+
+/* text-align */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+/* font-size */
+.font-xxsmall {
+  font-size: 8px;
+}
+
+.font-xsmall {
+  font-size: 10px;
+}
+
+.font-small {
+  font-size: 12px;
+}
+
+.font-middle {
+  font-size: 16px;
+}
+
+.font-large {
+  font-size: 24px;
+}
+
+.font-xlarge {
+  font-size: 36px;
+}
+
+.font-xxlarge {
+  font-size: 48px;
+}
+
+.font-xxxlarge {
+  font-size: 72px;
+}
+
+/* layout */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.l-relative {
+  position: relative;
+}
+
+.l-absolute {
+  position: absolute;
+}
+
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+/* 中央寄せ */
+
+.flexbox{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap: wrap;
+}
+
+.center {
+  -webkit-justify-content: center; /* Safari */
+  justify-content: center;
+}
+
+.sp-between {
+  -webkit-justify-content: space-between; /* Safari */
+  justify-content: space-between;
+}
+
+.x-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.y-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* sp pc */
+
+@media(min-width: 780px){
+  .is-pc {
+    display: block;
+  }
+
+  .is-pc-ib {
+    display: inline-block;
+  }
+
+  .is-sp,
+  .is-sp-ib {
+    display: none !important;
+  }
+
+  .l-left {
+    float: left;
+  }
+
+  .l-right {
+    float: right;
+  }
+
+}
+
+@media(max-width: 780px){
+  .is-pc,
+  .is-pc-ib {
+    display: none !important;
+  }
+
+  .is-sp {
+    display: block;
+  }
+
+  .is-sp-ib {
+    display: inline-block;
+  }
+}
+
+.main-container {
+  margin: 120px 0;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'ribbon';
+  background-image: url('../images/line.png');
+  background-repeat: repeat-x;
+  background-position: bottom;
+  color: #F39800;
+  width: 30%;
+  text-align: center;
+  margin: 0 auto 32px;
+  font-size: 48px;
+  line-height: 1.4;
+}
+
+h2 {
+  display: inline-block;
+  border-bottom: 4px solid #F39800;
+  padding-bottom: 2px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/*------------
+  main
+------------*/
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.top {
+  background-image: url('../images/background-top.png');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.photo {
+  background-color: #A4AAB3;
+}
+
+.entry {
+  background-image: url('../images/background-theme.png');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.photo h1 {
+  color: white;
+  background-image: url('../images/line2.png');
+}
+
+.logo-img {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.about-container {
+  width: 48%;
+}
+
+.about-container p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+
+.about-container img {
+  width: 100%;
+}
+
+.photo p {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.slick-slider {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.slick-slider img {
+  padding: 0 20px;
+  width: 60%;
+}
+
+.btn-container{
+  width: 40%;
+  margin-left: 30%;
+  height: 240px;
+}
+
+.btn {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.square_btn{
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    text-align: center;
+    background: #F39800;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 8px #F28D00;
+    border-radius: 3px;
+}
+
+.square_btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+    margin-bottom: 28px;
+}
+
+@media (max-width: 780px){
+  .wrapper {
+    width: 96%;
+    margin-left: 2%;
+  }
+
+  .logo-img {
+    width: 70%;
+    left: 15%;
+  }
+
+  #fp-nav {
+    display: none;
+  }
+  h1 {
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .about-container {
+    width: 100%;
+  }
+
+  .slick-slider {
+    width: 100%;
+    margin-left: 0
+  }
+
+  .slick-slider img {
+    padding: 0 5px;
+    width: 100%;
+  }
+
+  .btn-container{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+}

@@ -1,0 +1,71 @@
+body {
+  background-image: url('../images/background-contact.png');
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+#formWrap {
+  width: 70%;
+  margin-left: 15%;
+}
+
+table,
+tbody,
+thead,
+tfoot,
+tr,
+th,
+td {
+    display: block;
+}
+
+table.formTable,
+table.formTable input,
+table.formTable textarea {
+  font-family: 'ryumin';
+	width: 100%;
+	box-sizing: border-box;
+	margin:0 auto;
+	border-collapse:collapse;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+table.formTable input,
+table.formTable textarea{
+	border: 1px solid #F39800;
+	border-radius: 3px;
+	padding: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+table.formTable input:-moz-placeholder,
+table.formTable input::-webkit-input-placeholder {
+    color: #A4AAB3;
+}
+
+table.formTable th{
+	margin-bottom: 5px;
+  padding-left: 12px;
+}
+
+table.formTable td{
+  margin-bottom: 20px;
+}
+
+.entry-btn {
+  text-align: center;
+  border: none;
+  color: white;
+  background-color : #F39800;
+  border-radius: 3px;
+  width: 20%;
+  margin-left: 40%;
+  margin-bottom: 40px;
+  height: 40px;
+  line-height: 40px;
+}
