@@ -1,0 +1,55 @@
+h1 {
+  background-image: url('../images/h1-background.png');
+  font-size: 36px;
+  padding: 20px 0px;
+  text-align: center;
+  font-weight: normal;
+  background-position: center;
+  background-size: cover;
+  letter-spacing: 36px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  font-family: $english-font;
+  font-size: 72px;
+  z-index: 10;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 60%;
+    height: 40px;
+    z-index: -1;
+    left: 0;
+    top: 44px;
+    background-color: $sub-theme-color;
+    opacity: .6;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 60%;
+    height: 40px;
+    z-index: -1;
+    right: 0;
+    top: 64px;
+    background-color: $main-theme-color;
+    opacity: .8;
+  }
+}
+
+h3 {
+  width: 100vw;
+  text-align: center;
+  font-size: 28px;
+  font-weight: normal;
+  background: -webkit-linear-gradient(transparent 75%, $main-theme-color 25%);
+  background: -o-linear-gradient(transparent 75%, $main-theme-color 25%);
+  background: linear-gradient(transparent 75%, $main-theme-color 25%);
+  margin-bottom: 40px;
+}
