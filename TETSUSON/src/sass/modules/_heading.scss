@@ -48,8 +48,13 @@ h3 {
   text-align: center;
   font-size: 28px;
   font-weight: normal;
+  font-family: $english-font;
   background: -webkit-linear-gradient(transparent 75%, $main-theme-color 25%);
   background: -o-linear-gradient(transparent 75%, $main-theme-color 25%);
   background: linear-gradient(transparent 75%, $main-theme-color 25%);
   margin-bottom: 40px;
+}
+
+h4 {
+
 }
