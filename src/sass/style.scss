@@ -1,11 +1,19 @@
 @charset "utf-8";
 
 @import 'setting';
-//@import 'base/sanitize';
-//@import 'base/reset';
-//@import 'base/normalize';
+@import 'base/sanitize';
 @import 'base/mixin';
 @import 'base/base';
-@import 'layout/layout';
-@import 'sprites/icon';
 
+@import 'layout/layout';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/top';
+@import 'layout/about';
+@import 'layout/event';
+@import 'layout/sponser';
+@import 'layout/entry';
+
+@import 'modules/heading';
+
+@import 'sprites/icon';

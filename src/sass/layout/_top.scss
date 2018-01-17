@@ -1,0 +1,48 @@
+#top {
+  .mv-container {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background-image: url('../images/main-background.png');
+    background-size: cover;
+    background-position: center center;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 90%;
+      top: 5%;
+      left: 5%;
+      background-color: white;
+      opacity: .35;
+    }
+
+    .img-main-logo {
+      width: 400px;
+      position: absolute;
+      bottom: calc(5% + 80px);
+      right: calc(5% + 80px);
+    }
+  }
+
+  .container {
+    .about-tetsuson {
+      text-align: center;
+      line-height: 54px;
+    }
+  }
+
+  @media(max-width: 750px){
+    .mv-container {
+      height: calc(100vh - 54px);
+
+      .img-main-logo {
+        width: 75%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
