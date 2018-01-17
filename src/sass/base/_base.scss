@@ -27,3 +27,17 @@ section {
     margin: 0 auto 40px;
   }
 }
+
+.align-center {
+  text-align: center;
+}
+
+@media(max-width: 750px){
+  section {
+    width: 100vw;
+    .container {
+      width: 96%;
+      margin-left: 2%;
+    }
+  }
+}

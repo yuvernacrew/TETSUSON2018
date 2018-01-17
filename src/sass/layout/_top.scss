@@ -26,10 +26,15 @@
     }
   }
 
-  .container {
-    .about-tetsuson {
-      text-align: center;
-      line-height: 54px;
+  .about-tetsuson {
+    text-align: center;
+    line-height: 54px;
+  }
+
+  .slick {
+    img {
+      padding: 20px;
+      margin-bottom: 40px;
     }
   }
 

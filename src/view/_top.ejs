@@ -8,11 +8,43 @@
     <p class="about-tetsuson">分野・大学・国などのあらゆる枠を超えて集った<br>
     卒業制作の展示を行う、卒業制作合同展です。<br>
     2001 年度から毎年 3 月に関東で開催され、<br>
-    今年度で 18 年目を迎える展示会です。 企画・運営は全て、<br>
-    全国から集まった有志の学生スタッフが行っています。<br>
+    今年度で 18 年目を迎える展示会です。 <br>
+    企画・運営は全て、全国から集まった有志の<br class="is-sp">学生スタッフが行っています。
     </p>
   </div>
 
   <h2>photo</h2>
-  
+  <p class="align-center">過去のTETSUSONや運営、撮影の様子です。</p>
+  <div class="slick slider">
+    <img src='assets/images/past/img1.jpg'>
+    <img src='assets/images/past/img2.jpg'>
+    <img src='assets/images/past/img3.jpg'>
+    <img src='assets/images/past/img4.jpg'>
+    <img src='assets/images/past/img5.jpg'>
+    <img src='assets/images/past/img6.jpg'>
+    <img src='assets/images/past/img7.jpg'>
+    <img src='assets/images/past/img8.jpg'>
+    <img src='assets/images/past/img9.jpg'>
+    <img src='assets/images/past/img10.jpg'>
+  </div>
+
+
 </section>
+
+<script>
+$('.slick').slick({
+    centerMode: true,
+    slidesToShow: 3,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    responsive: [
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 1,
+      }
+    }]
+  });
+</script>
