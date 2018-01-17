@@ -1,20 +1,35 @@
 h1 {
-  background-image: url('../images/h1-background.png');
+  position: relative;
   font-size: 36px;
-  padding: 20px 0px;
+  padding: 20px;
   text-align: center;
   font-weight: normal;
-  background-position: center;
-  background-size: cover;
-  letter-spacing: 36px;
+  letter-spacing: 18px;
+  z-index: 1;
   margin-bottom: 40px;
 
   &:before {
-
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 94px;
+    top: 0;
+    left: 0;
+    background-image: url('../images/h1-background.png');
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
   }
 
   &:after {
-    
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100vw - 20px);
+    height: 74px;
+    background-color: rgba(255, 255, 255, .7);
+    z-index: -1;
   }
 }
 
@@ -25,58 +40,65 @@ h2 {
   color: white;
   font-size: 48px;
   z-index: 10;
+  margin-bottom: 20px;
 
+  &:after,
   &:before {
     content: "";
     position: absolute;
     z-index: 0;
-    width: 60%;
+    width: 64%;
     height: 40px;
     z-index: -1;
-    left: 0;
-    top: 44px;
-    background-color: $sub-theme-color;
     opacity: .45;
   }
-  &:after {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    width: 60%;
-    height: 40px;
-    z-index: -1;
+
+  &:before {
     right: 0;
-    top: 64px;
+    top: 16px;
+    background-color: $sub-theme-color;
+  }
+  &:after {
+    left: 0;
+    top: 30px;
     background-color: $main-theme-color;
-    opacity: .45;
   }
 }
 
 h3 {
-  width: 100vw;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
   text-align: center;
   font-size: 28px;
   font-weight: normal;
   font-family: $japanese-font;
-  background-color: white;
+  margin-bottom: 20px;
 
+  &:before,
   &:after {
     content: "";
+    top: 20px;
     position: absolute;
-    z-index: 0;
-    width: 100vw;
-    height: 40px;
-    z-index: -1;
-    right: 0;
-    top: 64px;
+    width: 42%;
+    height: 4px;
     background-color: $main-theme-color;
-    opacity: .45;
+    opacity: .8;
+  }
+
+  &:before {
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
   }
 }
 
 h4 {
   width: 100%;
-  text-align: center;
+  text-align: left;
+  padding-left: 20px;
   font-size: 20px;
   font-weight: normal;
   font-family: $japanese-font;
@@ -84,4 +106,20 @@ h4 {
   background-image: url('../images/h-line-background.png');
   background-repeat: repeat-x;
   background-position: bottom;
+}
+
+@media(max-width: 750px){
+  h2 {
+    &:after,
+    &:before {
+      width: 80%;
+    }
+  }
+
+  h3 {
+    &:after,
+    &:before {
+      width: 25%;
+    }
+  }
 }
