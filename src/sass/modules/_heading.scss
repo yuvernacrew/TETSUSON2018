@@ -78,9 +78,10 @@ h3 {
   &:before,
   &:after {
     content: "";
-    top: 20px;
     position: absolute;
-    width: 42%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
     height: 4px;
     background-color: $main-theme-color;
     opacity: .8;
@@ -95,17 +96,31 @@ h3 {
   }
 }
 
+.h-ruby {
+  text-align: center;
+  margin-top: -10px;
+  letter-spacing: 8px;
+  font-size: 8px;
+}
+
 h4 {
   width: 100%;
   text-align: left;
   padding-left: 20px;
   font-size: 20px;
+  margin-bottom: 20px;
   font-weight: normal;
   font-family: $japanese-font;
   background-size: contain;
   background-image: url('../images/h-line-background.png');
   background-repeat: repeat-x;
   background-position: bottom;
+}
+
+h5 {
+  font-family: $english-font;
+  font-size: 56px;
+  text-align: center;
 }
 
 @media(max-width: 750px){

@@ -19,6 +19,173 @@ body {
   background-color: $base-background-color;
 }
 
+/* text-align */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+/* font-size */
+.font-xxsmall {
+  font-size: 8px;
+}
+
+.font-xsmall {
+  font-size: 10px;
+}
+
+.font-small {
+  font-size: 12px;
+}
+
+.font-middle {
+  font-size: 16px;
+}
+
+.font-large {
+  font-size: 24px;
+}
+
+.font-xlarge {
+  font-size: 36px;
+}
+
+.font-xxlarge {
+  font-size: 48px;
+}
+
+.font-xxxlarge {
+  font-size: 72px;
+}
+
+.font-english {
+  font-family: $english-font;
+}
+
+/* layout */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.l-relative {
+  position: relative;
+}
+
+.l-absolute {
+  position: absolute;
+}
+
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+/* 中央寄せ */
+
+.flexbox{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap: wrap;
+}
+
+.center {
+  -webkit-justify-content: center; /* Safari */
+  justify-content: center;
+}
+
+.sp-between {
+  -webkit-justify-content: space-between; /* Safari */
+  justify-content: space-between;
+}
+
+.l-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.x-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.y-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* sp pc */
+
+@media(min-width: 780px){
+  .is-pc {
+    display: block;
+  }
+
+  .is-pc-ib {
+    display: inline-block;
+  }
+
+  .is-sp,
+  .is-sp-ib {
+    display: none !important;
+  }
+
+  .l-left {
+    float: left;
+  }
+
+  .l-right {
+    float: right;
+  }
+
+}
+
+@media(max-width: 780px){
+  .is-pc,
+  .is-pc-ib {
+    display: none !important;
+  }
+
+  .is-sp {
+    display: block;
+  }
+
+  .is-sp-ib {
+    display: inline-block;
+  }
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+
 section {
   width: 100vw;
 
@@ -26,10 +193,6 @@ section {
     max-width: 960px;
     margin: 0 auto 40px;
   }
-}
-
-.align-center {
-  text-align: center;
 }
 
 @media(max-width: 750px){
