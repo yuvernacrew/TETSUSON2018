@@ -1,0 +1,128 @@
+#event {
+  .talk-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .talk-block {
+      width: 45%;
+      height: 324px;
+      position: relative;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      &:first-child{
+        background-image: url('../images/event/talk-01.png');
+      }
+
+      &:last-child{
+        background-image: url('../images/event/talk-02.png');
+      }
+
+      .talk-description {
+        width: 100%;
+        text-align: center;
+        line-height: 28px;
+        z-index: 2;
+        margin-bottom: 20px;
+      }
+
+      .time {
+        text-align: center;
+        font-size: 12px;
+
+      }
+    }
+  }
+
+  .competition-container {
+    p {
+      margin-bottom: 16px;
+    }
+
+    .compe-image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .images-block {
+        width: 240px;
+        position: relative;
+        margin-bottom: 20px;
+
+        &:first-child,
+        &:nth-child(2) {
+          margin-right: 40px;
+        }
+
+        &:first-child::after,
+        &:nth-child(2):after {
+          content: ">";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -25px;
+          color: #aaa;
+          width: 10px;
+          height: 10px;
+          font-family: "Hiragino Kaku Gothic ProN", 游ゴシック, YuGothic, メイリオ, Meiryo, sans-serif;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .compe-time {
+      font-size: 16px;
+
+      span {
+        padding: 8px 20px;
+        border: 1px double $base-font-color;
+      }
+    }
+
+    .comp-timetable {
+      margin: 0 auto;
+
+      .time {
+        vertical-align: top;
+        padding-right: 20px;
+      }
+
+      .description {
+        vertical-align: top;
+        text-align: left;
+
+      }
+    }
+  }
+
+  @media(max-width: 750px) {
+    .talk-container {
+      .talk-block {
+        width: 90vw;
+        margin-left: 5vw;
+        height: 90vw;
+        font-size: 12px;
+      }
+    }
+
+    .compe-image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .images-block {
+        &:first-child,
+        &:nth-child(2) {
+          margin-right: 0 !important;
+        }
+
+        &:first-child::after,
+        &:nth-child(2):after {
+          display: none;
+        }
+      }
+    }
+  }
+}

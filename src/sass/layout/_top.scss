@@ -39,8 +39,22 @@
     .event-block {
       width: 290px;
       height: 290px;
-      background-color: #eee;
+      background-position: center;
+      background-size: contain;
       border-radius: 50%;
+      border: 1px solid #eee;
+
+      &:nth-child(1){
+        background-image: url('../images/event/event-o.png');
+      }
+
+      &:nth-child(2){
+        background-image: url('../images/event/event-c.png');
+      }
+
+      &:nth-child(3){
+        background-image: url('../images/event/event-g.png');
+      }
 
       p {
         width: 290px;

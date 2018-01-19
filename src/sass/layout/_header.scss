@@ -80,13 +80,11 @@
         height: 30px;
         vertical-align: middle;
         position: relative;
-        border-radius: 4px;
         cursor: pointer;
         border: 1px solid $base-font-color;
         padding: 6px 4px;
 
         span {
-
           position: absolute;
           height: 2px;/*線の太さ*/
           width: 20px;/*長さ*/

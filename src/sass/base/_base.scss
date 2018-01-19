@@ -86,7 +86,7 @@ body {
 }
 
 .clearfix:after {
-    content:" ";
+    content:"";
     display:block;
     clear:both;
 }
@@ -133,6 +133,9 @@ body {
   transform: translateY(-50%);
 }
 
+.line-40 {
+  line-height: 40px;
+}
 /* sp pc */
 
 @media(min-width: 780px){
@@ -188,6 +191,7 @@ body {
 
 section {
   width: 100vw;
+  min-height: calc(100vh - 270px);
 
   .container {
     max-width: 960px;
