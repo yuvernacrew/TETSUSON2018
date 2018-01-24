@@ -1,0 +1,52 @@
+#form {
+  background-image: url('../images/entry-background.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  table,
+  tbody,
+  thead,
+  tfoot,
+  tr,
+  th,
+  td {
+      display: block;
+      font-weight: normal;
+  }
+
+  .container{
+    margin-bottom: 0;
+    padding-bottom: 40px;
+
+    .formTable {
+      border-collapse:collapse;
+
+      input,
+      textarea {
+        width: 100%;
+        border-collapse:collapse;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        background: rgba(255, 255, 255, .75);
+      }
+
+      input:-moz-placeholder,
+      input::-webkit-input-placeholder {
+        color: #eee;
+      }
+
+      tr {
+        th {
+          text-align: left;
+          margin-bottom: 5px;
+          padding-left: 12px;
+        }
+
+        td{
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

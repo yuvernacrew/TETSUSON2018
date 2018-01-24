@@ -1,0 +1,31 @@
+#entry {
+  background-image: url('../images/entry-background.png');
+  background-size: cover;
+  background-position: 0 204px;
+  background-repeat: no-repeat;
+
+  .container {
+    margin-bottom: 0;
+    padding-bottom: 40px;
+
+    h4 {
+      background-image: none;
+      letter-spacing: 8px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid $main-theme-color;
+      padding-left: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+
+      li {
+        margin-bottom: 8px;
+      }
+    }
+
+    p {
+      margin-bottom: 8px;
+    }
+  }
+}

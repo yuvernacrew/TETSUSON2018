@@ -85,12 +85,6 @@ body {
   position: absolute;
 }
 
-.clearfix:after {
-    content:"";
-    display:block;
-    clear:both;
-}
-
 /* 中央寄せ */
 
 .flexbox{
@@ -178,11 +172,11 @@ body {
 }
 
 .margin-bottom-40 {
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
 }
 
 .margin-bottom-20 {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 
 .margin-bottom-0 {
@@ -191,7 +185,7 @@ body {
 
 section {
   width: 100vw;
-  min-height: calc(100vh - 270px);
+  min-height: calc(100vh - 178px);
 
   .container {
     max-width: 960px;

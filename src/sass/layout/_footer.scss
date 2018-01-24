@@ -1,4 +1,32 @@
 .footer {
-  height: 200px;
+  padding: 20px 0;
   background-color: #eee;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+
+  .contact-container {
+    width: 60%;
+    line-height: 30px;
+  }
+
+  .sns-container {
+    a {
+      margin: 0 10px;
+      i {
+        color: $base-font-color;
+      }
+    }
+  }
+}
+
+
+
+@media(max-width: 750px){
+  .footer-container {
+    width: 96%;
+    margin-left: 2%;
+  }
 }
