@@ -194,6 +194,10 @@ section {
 }
 
 @media(max-width: 750px){
+  * {
+    -webkit-appearance: none;
+  }
+
   section {
     width: 100vw;
     .container {

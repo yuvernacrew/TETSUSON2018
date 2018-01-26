@@ -36,7 +36,7 @@
             a {
               color: $base-font-color;
               font-family: $japanese-font;
-              text-decoration: none;
+              text-decoration: none !important;
               display: inline-block;
               width: 100%;
 
