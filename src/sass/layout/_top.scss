@@ -35,6 +35,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: space-between;
 
     .event-block {
       width: 290px;

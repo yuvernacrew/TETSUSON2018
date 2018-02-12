@@ -3,6 +3,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: space-around;
 
     .talk-block {
       width: 45%;
@@ -45,6 +48,9 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      display: -webkit-flex;
+      -webkit-flex-wrap: wrap;
+      -webkit-justify-content: center;
 
       .images-block {
         width: 240px;
@@ -102,6 +108,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-end;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -webkit-align-items: flex-end;
 
     .access-img{
       width: 300px;
@@ -133,6 +143,9 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      display: -webkit-flex;
+      -webkit-flex-wrap: wrap;
+      -webkit-justify-content: center;
 
       img {
         padding: 20px;
@@ -158,6 +171,9 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      display: -webkit-flex;
+      -webkit-flex-wrap: wrap;
+      -webkit-justify-content: center;
 
       .images-block {
         &:first-child,

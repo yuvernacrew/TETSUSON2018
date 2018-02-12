@@ -19,6 +19,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
 
     .staff-block {
       position: relative;
