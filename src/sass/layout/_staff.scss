@@ -1,19 +1,4 @@
-#about {
-  .merit-title{
-    font-size: 16px;
-    margin-bottom: 4px;
-
-    span {
-      padding-bottom: 4px;
-      border-bottom: 1px solid $main-theme-color;
-    }
-  }
-
-  .merit-description {
-    font-size: 12px;
-    margin-bottom: 20px;
-  }
-
+#staff {
   .staff-container {
     width: 100%;
     display: flex;
@@ -42,20 +27,14 @@
         width: 100px;
         height: 100px;
 
-        .staff-role,
         .staff-name {
           position: absolute;
           display: inline-block;
           width: 100px;
           left: 50%;
-          transform: translateX(-50%);
-        }
-
-        .staff-role{
-          top: 30px;
-        }
-        .staff-name {
-          top: 52px;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
         }
       }
     }

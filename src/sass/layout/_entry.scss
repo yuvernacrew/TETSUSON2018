@@ -8,6 +8,21 @@
     margin-bottom: 0;
     padding-bottom: 40px;
 
+    .merit-title{
+      font-size: 16px;
+      margin-bottom: 4px;
+
+      span {
+        padding-bottom: 4px;
+        border-bottom: 1px solid $main-theme-color;
+      }
+    }
+
+    .merit-description {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
     h4 {
       background-image: none;
       letter-spacing: 8px;

@@ -130,8 +130,13 @@ body {
 .line-40 {
   line-height: 40px;
 }
-/* sp pc */
 
+.map {
+  width: 100%;
+  height: 420px;
+}
+
+/* sp pc */
 @media(min-width: 780px){
   .is-pc {
     display: block;

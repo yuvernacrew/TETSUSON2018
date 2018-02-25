@@ -88,11 +88,6 @@
     }
   }
 
-  .map {
-    width: 100%;
-    height: 420px;
-  }
-
   @media(max-width: 750px){
     .mv-container {
       height: calc(100vh - 54px);

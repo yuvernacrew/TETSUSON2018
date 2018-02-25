@@ -5,11 +5,16 @@
 
 .footer-container {
   max-width: 960px;
-  margin: 0 auto 40px;
+  margin: 0 auto;
 
   .contact-container {
     width: 60%;
     line-height: 30px;
+
+    p {
+      line-height: 16px;
+      margin-bottom: 20px;
+    }
   }
 
   .sns-container {
@@ -22,11 +27,35 @@
   }
 }
 
+.banner-container {
+  max-width: 960px;
+  margin: 0 auto 40px;
+
+  a {
+    display: inline-block;
+    margin-right: 20px;
+    width: 300px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
 
 
 @media(max-width: 750px){
-  .footer-container {
-    width: 96%;
-    margin-left: 2%;
+  .footer-container{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .banner-container {
+    width: 90%;
+    margin: 0 5% 20px 5%;
+
+    a {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 }

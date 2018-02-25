@@ -1,44 +1,4 @@
 #event {
-  .talk-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    display: -webkit-flex;
-    -webkit-flex-wrap: wrap;
-    -webkit-justify-content: space-around;
-
-    .talk-block {
-      width: 45%;
-      height: 324px;
-      position: relative;
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-
-      &:first-child{
-        background-image: url('../images/event/talk-01.png');
-      }
-
-      &:last-child{
-        background-image: url('../images/event/talk-02.png');
-      }
-
-      .talk-description {
-        width: 100%;
-        text-align: center;
-        line-height: 28px;
-        z-index: 2;
-        margin-bottom: 20px;
-      }
-
-      .time {
-        text-align: center;
-        font-size: 12px;
-
-      }
-    }
-  }
-
   .competition-container {
     p {
       margin-bottom: 16px;
