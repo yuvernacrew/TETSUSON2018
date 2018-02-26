@@ -1,4 +1,16 @@
 #event {
+  .event {
+    max-width: 780px;
+    margin: 0 auto;
+
+    .desctiption {
+      margin-left: 40px;
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
   .competition-container {
     p {
       margin-bottom: 16px;
@@ -118,12 +130,18 @@
   }
 
   @media(max-width: 750px) {
-    .talk-container {
-      .talk-block {
-        width: 90vw;
-        margin-left: 5vw;
-        height: 90vw;
-        font-size: 12px;
+    .event {
+      width: 90%;
+      .image {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .desctiption {
+        margin-left: 0;
+
+        p {
+          margin-bottom: 20px;
+        }
       }
     }
 
@@ -145,14 +163,6 @@
         &:nth-child(2):after {
           display: none;
         }
-      }
-    }
-
-    .access-container {
-      .access-img,
-      .access-description {
-        width: 90%;
-        text-align: center;
       }
     }
   }

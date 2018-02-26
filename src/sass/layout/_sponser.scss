@@ -1,5 +1,18 @@
 #sponser {
   .container {
+    .sponser-img {
+      width: 100%;
+
+      a {
+        display: block;
+        width: 100%;
+
+        img {
+          max-width: 600px;
+        }
+      }
+    }
+
     p{
       line-height: 2.4;
       margin-bottom: 8px;
