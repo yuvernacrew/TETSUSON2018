@@ -4,6 +4,20 @@
   background-position: 0 204px;
   background-repeat: no-repeat;
 
+  .outline-toggle {
+    color: $main-theme-color;
+    margin-bottom: 20px;
+    text-align: right;
+
+    .outline-toggle-btn {
+      cursor: pointer;
+    }
+  }
+
+  .outline-discription {
+    display: none;
+  }
+
   .container {
     margin-bottom: 0;
     padding-bottom: 40px;

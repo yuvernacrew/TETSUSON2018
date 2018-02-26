@@ -24,4 +24,14 @@
       margin-bottom: 20px;
     }
   }
+
+  @media(max-width: 750px) {
+    .sponser-img {
+      a {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
