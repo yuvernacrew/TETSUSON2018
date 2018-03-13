@@ -214,12 +214,14 @@ section {
     .container {
       width: 96%;
       margin-left: 2%;
-    }
-  }
 
-  p {
-    img {
-      width: 100%;
+      p {
+        img {
+          display: block;
+          width: 70%;
+          margin-left: 15%;
+        }
+      }
     }
   }
 }
